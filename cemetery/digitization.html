@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>晋冀鲁豫烈士陵园</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/difitization.css">
+</head>
+<body>
+<div class="headerPage"></div>
+<div class="banner-box">
+    <div class="banner-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner1.png" alt=""></div>
+        </div>
+    </div>
+</div>
+<div class="main clear">
+    <div class="clear">
+        <div class="box-nav fl">
+            <div class="lf-center">
+                <img src="images/dd.png" alt="">
+            </div>
+        </div>
+        <div class="box-rt fr">
+            <div class="bread"><a href="index.html">首页</a> &gt; <a href="">数字园馆</a></div>
+        </div>
+    </div>
+    <ul class="content">
+        <li class="content-li active clear">
+            <div class="li-fl fl">
+                <img src="images/dd1.png" alt="">
+                <span class="tip"></span>
+            </div>
+            <div class="li-fr fr">
+                <p class="title">左权将军纪念馆</p>
+                <p class="detail">    左权将军纪念馆，原为湖心亭，1957年改名为左权将军纪念馆，1975年改建为现代建筑。馆名为徐特立所题。纪念馆四周湖水</p>
+            </div>
+        </li>
+        <li class="content-li clear">
+            <div class="li-fl fl">
+                <img src="images/dd1.png" alt="">
+                <span class="tip"></span>
+            </div>
+            <div class="li-fr fr">
+                <p class="title">左权将军纪念馆</p>
+                <p class="detail">    左权将军纪念馆，原为湖心亭，1957年改名为左权将军纪念馆，1975年改建为现代建筑。馆名为徐特立所题。纪念馆四周湖水</p>
+            </div>
+        </li>
+    </ul>
+    <div id="page"></div>
+</div>
+
+<div class="footerPage"></div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/pagination.js"></script>
+<script src="js/public.js"></script>
+<script>
+    //获取当前页码
+    var current;
+    var pageSize = 10;
+    //请求当前页要展示的数据
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getContentList',
+            typeid: $.Request('id'),
+            pageSize: pageSize,
+            pageIndex: 1
+        },
+        success: function (data) {
+            current = data.recordCount;
+            var arr = [];
+            for (var i = 0; i < current; i++) {
+                arr.push(i)
+            }
+            $('#page').pagination({
+                dataSource: arr,
+                pageSize: pageSize,
+                prevText: '<上一页',
+                nextText: '下一页>',
+                callback: function () {
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        url: GLOBEL_URl,
+                        data: {
+                            oper: 'getContentList',
+                            typeid: $.Request('id'),
+                            pageSize: pageSize,
+                            pageIndex: arguments[1].pageNumber
+                        },
+                        success: function (data) {
+                            var aLi = '';
+                            $(data.data).each(function (ind, item) {
+                                aLi += `
+                                    <li class="content-li clear">
+                                        <a href="`+item.Links+`">
+                                            <div class="li-fl fl">
+                                                <img src="`+GLOBEL_IP+``+item.ImgUrl+`" alt="">
+                                                <span class="tip"></span>
+                                            </div>
+                                            <div class="li-fr fr">
+                                                <p class="title">`+item.Title+`</p>
+                                                <p class="detail">    左权将军纪念馆，原为湖心亭，1957年改名为左权将军纪念馆，1975年改建为现代建筑。馆名为徐特立所题。纪念馆四周湖水</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                `
+                                $('.detail').html(item.ContentHtml)
+                            })
+                            $('.content').html(aLi)
+                        }
+                    })
+                }
+            });
+        }
+    })
+</script>
+</body>
+</html>

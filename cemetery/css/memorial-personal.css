@@ -1,0 +1,77 @@
+.main{
+    position: relative;
+    box-shadow: 0 0 10px #a09f9f;
+    margin: 30px auto 0;
+    padding: 0 3.8%;
+    width: 1400px;
+    border-top: 4px solid #980c21;
+    border-bottom: 4px solid #980c21;
+    border-radius: 5px;
+    background: #fff;
+}
+.tab{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 0;
+}
+.tab a{
+    width: 28.5%;
+}
+.tab a img{
+    width: 100%;
+    height: auto;
+}
+.peoples{
+    /*display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;*/
+}
+/*.peoples li{
+    margin-bottom: 64px;
+    width: 23%;
+    text-align: center;
+    border-bottom: 1px solid #d1d1d1;
+
+}*/
+.peoples li {
+    margin-bottom: 64px;
+    width: 20%;
+    margin: 0 2.3% 64px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid #d1d1d1;
+}
+.peoples li img{
+    width: 100%;
+    height: auto;
+}
+.peoples li .name{
+    margin: 30px 0 10px;
+    font-size: 18px;
+    color: #000;
+}
+.peoples li .year{
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #666;
+}
+.page{
+    padding: 20px 0 163px;
+    text-align: center;
+}
+.page div{
+    display: inline-block;
+    border: 1px solid #7d0000;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 38px;
+    text-align: center;
+}
+.page .prev,.page .next{
+    padding: 0 15px;
+}
+.page .num{
+    width: 38px;
+    height: 38px;
+}

@@ -1,0 +1,99 @@
+.main{
+    position: relative;
+    box-shadow: 0 0 10px #a09f9f;
+    margin: 30px auto 0;
+    width: 1400px;
+    border-top: 4px solid #980c21;
+    border-bottom: 4px solid #980c21;
+    border-radius: 5px;
+    background: #fff;
+}
+.main .box-nav{
+    position: absolute;
+    top: -40px;
+    width: 24.5%;
+
+}
+.main .box-nav .lf-center{
+    float: right;
+    width: 90%;
+    background: #f7f7f7;
+}
+.main .box-nav .lf-center{
+    text-align: center;
+}
+.main .box-nav .lf-center img{
+    text-align: center;
+    padding: 35px 0;
+
+}
+.main .box-rt{
+    padding: 40px 46px 100px;
+    width: 75.5%;
+    min-height: 450px;
+}
+.main .box-rt .bread,.main .box-rt .bread a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #980c21;
+}
+.main .box-rt .tit h1{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+.main .box-rt .con p{
+    line-height: 34px;
+}
+.main .box-rt .con .img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.main .content{
+    width: 95%;
+    margin: 0 auto 115px;
+}
+.main .content .content-li{
+    margin-bottom: 70px;
+    background: #f7f7f7;
+}
+.main .content .content-li.active .li-fr .title,.main .content .content-li.active .li-fr .detail{
+    color: #b50000;
+}
+.main .content .content-li .li-fl{
+    position: relative;
+    width: 70.8%;
+}
+.main .content .content-li .li-fl img{
+    width: 100%;
+    height: auto;
+}
+.main .content .content-li .li-fl .tip{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    background: url("../images/720.png") no-repeat;
+    background-size: 100% 100%;
+}
+.main .content .content-li .li-fr{
+    position: relative;
+    width: 27%;
+}
+.main .content .content-li .li-fr .title{
+    margin-top: 60px;
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+    line-height: 70px;
+}
+.main .content .content-li .li-fr .detail{
+    padding-right: 50px;
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+    line-height: 42px;
+}

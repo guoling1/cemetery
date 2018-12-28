@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>晋冀鲁豫烈士陵园</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+<div class="headerPage"></div>
+<div class="banner-box">
+    <div class="banner-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner1.png" alt=""></div>
+        </div>
+    </div>
+</div>
+<div class="main clear">
+    <div class="box-nav fl">
+        <div class="lf-center">
+            <!--<img src="images/contact.png" alt="">-->
+            <p></p>
+        </div>
+    </div>
+    <div class="box-rt fr">
+        <div class="bread"><a href="index.html">首页</a> &gt; <a href="">联系我们</a></div>
+        <div class="map">
+            <img src="images/map.png" alt="">
+        </div>
+    </div>
+
+</div>
+
+<div class="footerPage"></div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+    var navList = JSON.parse(localStorage.getItem('navList'));
+    var parentName;
+    for (var i=0;i<navList.length;i++){
+        if($.Request('id')==navList[i].ContentTypeId){
+            console.log(navList[i].ContentHtml)
+            var reg = /src="res/g;
+            navList[i].ContentHtml=navList[i].ContentHtml.replace(reg,'src="'+GLOBEL_IP+'/res');
+            console.log(navList[i].ContentHtml);
+            $(".map").html(navList[i].ContentHtml);
+            parentName = navList[i].FullName;
+            $(".lf-center p").html(parentName)
+        }
+    }
+</script>
+</body>
+</html>

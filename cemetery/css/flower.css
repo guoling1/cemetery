@@ -1,0 +1,96 @@
+.main{
+    background: url(../images/flowerbg1.png) no-repeat center;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+    /* min-width: 1400px; */
+    background-size: cover;
+}
+.bottom{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.bottom .center{
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box; /* Firefox 17- */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex; /* Firefox 18+ */
+    display: -ms-flexbox; /* IE 10 */
+    display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+    justify-content: space-evenly;
+    margin: 0 auto 10px;
+    width: 340px;
+    height: 88px;
+    background: url(../images/bottom_center.png) no-repeat center;
+    background-size: 100% auto;
+}
+.bottom .center span{
+    display: inline-block;
+    margin: 6% 12%;
+    width: 22%;
+    height: 50%;
+}
+.bottom .peopleNum{
+    position: absolute;
+    bottom: 0;
+    left: 44px;
+    height: 84px;
+    background: url(../images/star.png) no-repeat;
+    background-size: auto 100%;
+}
+.bottom .peopleNum p{
+    margin-left: 120px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #980c21;
+}
+.flower_group{
+    display: none;
+    position: fixed;
+    bottom: 108px;
+    width: 100%;
+
+}
+.img-group{
+    margin: 0 auto;
+    /*left: 31.25%;*/
+    display: flex;
+    justify-content: space-between;
+    /*width: 40%;*/
+    width: 730px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.img-group .item{
+    width: 115px;
+    height: 115px;
+    /*background: #fff;*/
+    border-radius: 10px;
+    text-align: center;
+}
+.img-group .item img{
+    margin-top: 12px;
+}
+.flower{
+    width: 70px;
+    position: absolute;
+    bottom: 15%;
+}
+.flower img{
+    width: 100%;
+    height: auto;
+}
+.left{
+    left: 40.5%;
+    bottom: 207px;
+}
+.center{
+    left: 43%;
+    width: 150px;
+    bottom: 10%;
+}
+.right{
+    right: 42%;
+    bottom: 207px;
+}

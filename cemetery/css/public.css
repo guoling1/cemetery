@@ -1,0 +1,255 @@
+.head-box{
+    padding: 43px 0 24px;
+    background: url(../images/header-bg.png) repeat-x;
+    position: relative;
+    min-width: 1400px;
+}
+.head-box .head{
+    margin: auto;
+    width: 1400px;
+}
+.head-box .head .logo{
+    display: inline-block;
+    color: transparent;
+    font-size: 0;
+}
+.head-box .head .logo img{
+    display: inline-block;
+    width: auto;
+    height: 131px;
+    color: transparent;
+}
+.head-box .head .right{
+    float: right;
+    margin-top: -24px;
+    font-size: 18px;
+    color: #fff;
+}
+.head-box .search{
+    padding: 6px 0;
+    margin-top: 50px;
+    /*width: 410px;*/
+    height: 50px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+}
+.head-box .search .left{
+    display: inline-block;
+    line-height: 40px;
+    /*border-right: 1px dashed #222222;*/
+}
+.head-box .search img{
+    margin: 0 13px;
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    vertical-align: middle;
+}
+.head-box .search input,.head-box .search .select{
+    border: none;
+    height: 100%;
+    background: none;
+}
+.head-box .search input{
+    width: 201px;
+    padding-left: 1.2rem;
+}
+.head-box .search .select{
+    position: relative;
+    display: inline-block;
+    width: 141px;
+    text-align: center;
+    border: 0;
+    line-height: 38px;
+    outline: none;
+    background: url("../images/buttom.png") no-repeat center right;
+}
+.head-box .search .select p{
+    height: 100%;
+    color: #222;
+}
+.head-box .search .select .select-ul{
+    display: none;
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    z-index: 100;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+}
+.head-box .search .select .select-ul li:hover{
+    background: rgba(220,19,38,0.6);
+}
+.banner-box .swiper-wrapper img{
+    min-width: 1400px;
+}
+.swiper-wrapper img{
+    width: 100%;
+    /*height: auto;*/
+    height: 200px;
+}
+.swiper-button-prev{
+    width: 57px;
+    height: 57px;
+    background: url("../images/banner-left.png") no-repeat;
+}
+.swiper-button-next{
+    width: 57px;
+    height: 57px;
+    background: url("../images/banner-right.png") no-repeat;
+}
+.banner-box{
+    min-width: 1400px;
+}
+.content-box {
+    z-index: 11;
+    position: absolute;
+    /*top: 16px;*/
+    top:218px;
+    margin: auto;
+    height: 100px;
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+}
+.content-box .content-list {
+    padding-top: 14px;
+    margin: 0 auto;
+    width: 1400px;
+    position: relative;
+    text-align: center;
+}
+
+.content-box .content-list .content-li{
+    position: relative;
+    display: inline-block;
+    padding: 9px 17px 0;
+    height: 60px;
+    font-size: 20px;
+    color: #222;
+    border-right: 1px dashed #474444;
+    cursor: pointer;
+}
+.content-box .content-list .content-li.active{
+    color: #980c21;
+}
+.content-box .content-list .content-li:last-child{
+    border: none;
+}
+.content-box .content-list .content-li p:nth-child(2){
+    font-size: 12px;
+}
+.content-box .content-list .content-li:hover .li-box{
+    display: block;
+}
+.content-box .content-list .li-box{
+    display: none;
+    position: absolute;
+    left: 0;
+    line-height: 74px;
+    color: #980c21;
+    font-size: 16px;
+    width: 500px;
+    text-align: left;
+}
+.content-box .content-list .li-box .li-li{
+    color: #980c21;
+    font-size: 16px;
+}
+.content-box .content-list .li-box span{
+    margin: 0 6px;
+}
+
+
+.main-box{
+    width: 100%;
+}
+.main-box .main{
+    margin: auto;
+    width: 1400px;
+}
+
+.foot-box{
+    padding: 75px 0;
+    margin-top: 74px;
+    width: 100%;
+    background: #fff;
+    min-width: 1400px;
+}
+.foot{
+    margin: 0 auto;
+    width: 1400px;
+    height: 100%;
+    font-size: 21px;
+    color: #424141;
+    text-align: center;
+}
+.foot-box .foot .foot-left{
+    display: inline-block;
+    width: 105px;
+    height: 113px;
+    vertical-align: top;
+}
+.foot-box .foot .foot-left img{
+    width: 100%;
+    height: auto;
+}
+.foot-box .foot .foot-right{
+    margin: 14px 0 0 37px;
+    display: inline-block;
+    text-align: left;
+}
+.foot-box .qrCode{
+    z-index: 111111;
+    position: fixed;
+    right: 20px;
+    bottom: 10%;
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+.foot-box .qrCode img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+    /*分页 .page*/
+.paginationjs .paginationjs-pages{
+    float: none;
+    padding: 20px 0 163px;
+}
+.paginationjs .paginationjs-pages ul {
+    float: none;
+    text-align: center;
+}
+.paginationjs .paginationjs-pages li{
+    float: none;
+    display: inline-block;
+    border: 1px solid #7d0000;
+    margin-right: 5px;
+}
+.paginationjs .paginationjs-pages li:last-child{
+    margin-right: 0;
+    border: 1px solid #7d0000;
+    padding: 0 10px;
+}
+.paginationjs .paginationjs-pages li:first-child{
+    padding: 0 10px;
+}
+.paginationjs .paginationjs-pages li>a{
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+.paginationjs .paginationjs-pages li.active>a {
+
+    background: #7d0000;
+    color: #fff;
+}
+.main .box-nav .lf-center p{
+    font-size: 40px;
+    font-weight: bold;
+    color: #980c21;
+    padding: 20px;
+}

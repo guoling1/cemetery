@@ -1,0 +1,199 @@
+.main {
+    position: relative;
+    box-shadow: 0 0 10px #a09f9f;
+    margin: 30px auto 0;
+    padding: 0 3.8%;
+    width: 1400px;
+    border-top: 4px solid #980c21;
+    border-bottom: 4px solid #980c21;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 0;
+}
+
+.tab a {
+    width: 28.5%;
+}
+
+.tab a img {
+    width: 100%;
+    height: auto;
+}
+
+.people .top {
+    position: relative;
+}
+
+.people .top img {
+    width: 100%;
+    height: auto;
+}
+
+.people .top .tip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /*padding: 17.5% 1%;*/
+    width: 22%;
+    height: 14.8%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.people .top span{
+    display: inline-block;
+    margin-top: 7%;
+    width: 80%;
+    height: 60%;
+    background: #fff;
+}
+.people .top span.pub{
+    background: #7d0000ad;
+}
+
+.people .top span img {
+    width: 70%;
+    height: auto;
+    margin-top: 6%;
+}
+.people .people-data{
+    margin: 55px 0;
+}
+.people .people-data .data-fl{
+    width: 15.8%;
+}
+.people .people-data .data-fl img{
+    width: 100%;
+    height: auto;
+}
+.people .people-data .data-fr{
+    /*width: 82%;*/
+    line-height: 36px;
+    font-size: 16px;
+    color: #333;
+}
+.people .people-data .data-fr .name{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+.message-title{
+    text-align: center;
+}
+.message-title span{
+    position: relative;
+    display: inline-block;
+    padding: 0 10px 27px;
+    font-size: 20px;
+    color: #000;
+    border-bottom: 1px solid #d8d8d8;
+}
+.message-title span i{
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+.message .message-ul li{
+    padding: 32px 0;
+    font-size: 16px;
+    color: #666;
+    border-bottom: 1px dashed #7d0000;
+}
+.message .message-ul li .li-top{
+    margin-bottom: 20px;
+}
+.message .message-ul li .name{
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 18px;
+}
+
+.page {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page div {
+    display: inline-block;
+    border: 1px solid #7d0000;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 38px;
+    text-align: center;
+}
+
+.page .prev, .page .next {
+    padding: 0 15px;
+}
+
+.page .num {
+    width: 38px;
+    height: 38px;
+}
+.comment{
+
+}
+.comment .form{
+    padding-top: 47px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+.comment .form .list{
+    margin-bottom: 36px;
+}
+.comment .form p{
+    float: left;
+    width: 88px;
+    line-height: 44px;
+}
+.comment .form .right{
+    margin-left: 88px;
+}
+.comment .form input,.comment .form textarea{
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    background: #f1f1f1;
+    border: none;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+}
+.comment .form textarea{
+    height: 155px;
+}
+.comment .form .code .right{
+    text-align: left;
+}
+.comment .form .code .codeInp{
+    width: 65%;
+}
+.comment .form .code input[type=button]{
+    width: 160px;
+    background: #b50000;
+    border-radius: 3px;
+    color: #fff;
+}
+.comment button{
+    margin: 50px 0 115px;
+    width: 135px;
+    line-height: 36px;
+    background: #b50000;
+    border-radius: 3px;
+    color: #fff;
+}
+.form .code canvas{
+    vertical-align: top;
+}

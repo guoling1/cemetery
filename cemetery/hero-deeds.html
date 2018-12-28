@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>晋冀鲁豫烈士陵园</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/hero-deeds.css">
+</head>
+<body>
+<div class="headerPage"></div>
+<div class="banner-box">
+    <div class="banner-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner3.png" alt=""></div>
+        </div>
+    </div>
+</div>
+<div class="main clear">
+    <div class="box-nav fl">
+        <div class="lf-center">
+            <!--<img src="images/reser.png" alt="">-->
+            <p></p>
+        </div>
+        <ul id="left-menu">
+            <!--<li>
+                <a href="javascript:;">
+                    <span>01</span>文物馆藏·Museum
+                </a>
+            </li>
+            <li class="active">
+                <i></i>
+                <a href="javascript:;">
+                    <span>02</span>烈士事迹·Hero deeds
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span>03</span>学术研究·Research
+                </a>
+            </li>-->
+        </ul>
+    </div>
+    <div class="box-rt fr">
+        <div class="bread"><a href="index.html">首页</a> &gt; <a href="">史料研究</a> &gt; <a href="">英雄事迹</a></div>
+        <div class="title">
+            <!--<span>英烈事迹<i></i></span>-->
+        </div>
+        <ul class="peoples">
+            <li>
+                <a href="hero-deeds-detail.html">
+                    <img src="images/people.png" alt="">
+                    <p class="name">左权</p>
+                    <p class="year">1905-1942</p>
+                </a>
+            </li>
+            <li>
+                <a href="hero-deeds-detail.html">
+                    <img src="images/people.png" alt="">
+                    <p class="name">左权</p>
+                    <p class="year">1905-1942</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/people.png" alt="">
+                    <p class="name">左权</p>
+                    <p class="year">1905-1942</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/people.png" alt="">
+                    <p class="name">左权</p>
+                    <p class="year">1905-1942</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/people.png" alt="">
+                    <p class="name">左权</p>
+                    <p class="year">1905-1942</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/people.png" alt="">
+                    <p class="name">左权</p>
+                    <p class="year">1905-1942</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/people.png" alt="">
+                    <p class="name">左权</p>
+                    <p class="year">1905-1942</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/people.png" alt="">
+                    <p class="name">左权</p>
+                    <p class="year">1905-1942</p>
+                </a>
+            </li>
+        </ul>
+        <div id="page"></div>
+    </div>
+</div>
+
+<div class="footerPage"></div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/pagination.js"></script>
+<script src="js/public.js"></script>
+<script>
+    leftMenu()
+    $('.title').html('<span>'+$.Request('name')+'<i></i></span>')
+    //获取当前页码
+    var current;
+    var pageSize = 20;
+    //请求当前页要展示的数据
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getContentList',
+            typeid: $.Request('id'),
+            pageSize: pageSize,
+            pageIndex: 1
+        },
+        success: function (data) {
+            current = data.recordCount;
+            var arr = [];
+            for (var i = 0; i < current; i++) {
+                arr.push(i)
+            }
+            $('#page').pagination({
+                dataSource: arr,
+                pageSize: pageSize,
+                prevText: '<上一页',
+                nextText: '下一页>',
+                callback: function () {
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        url: GLOBEL_URl,
+                        data: {
+                            oper: 'getContentList',
+                            typeid: $.Request('id'),
+                            pageSize: pageSize,
+                            pageIndex: arguments[1].pageNumber
+                        },
+                        success: function (data) {
+                            var aLi = '';
+                            $(data.data).each(function (ind, item) {
+                                aLi += `
+                                        <li>
+                                            <a href="hero-deeds-detail.html?ContentId=`+item.ContentId+`&ParentId=`+$.Request('ParentId')+`&id=`+$.Request('id')+`">
+                                                <img src="`+GLOBEL_IP+item.ImgUrl+`" alt="" class="img">
+                                                <p class="name">`+item.Title+`</p>
+                                                <p class="year"></p>
+                                            </a>
+                                        </li>
+                                `
+
+                            })
+
+                            $('.peoples').html(aLi)
+                            if($.Request('name')=='烈士事迹'){
+                                $('.img').css('height','290px')
+                            }
+                        }
+                    })
+                }
+            });
+        }
+    })
+
+</script>
+</body>
+</html>
