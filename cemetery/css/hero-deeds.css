@@ -100,7 +100,7 @@
 }
 .peoples li{
     margin-bottom: 64px;
-    width: 23%;
+    width: 22%;
     margin-right: 1.6%;
     text-align: center;
     border-bottom: 1px solid #d1d1d1;
@@ -145,4 +145,12 @@
 .page .num.active{
     background: #7d0000;
     color: #fff;
+}
+@media screen and (max-width: 1420px){
+    .main{width: 90%;}
+    .main .box-nav ul li a span {font-size: 18px;}
+    .main .box-nav ul li a {font-size: 16px;}
+}
+@media screen and (max-width: 1120px){
+    .main .box-nav .lf-center p {font-size: 32px;}
 }

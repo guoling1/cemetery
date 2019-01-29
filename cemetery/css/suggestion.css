@@ -57,7 +57,7 @@
     color: #fff;
 }
 .main .box-nav ul li a span{
-    margin: 0 20px 0 65px;
+    margin: 0 5% 0 10%;
     font-size: 20px;
     font-weight: bold;
 }
@@ -145,4 +145,13 @@ button{
     background: #b50000;
     border-radius: 3px;
     color: #fff;
+}
+@media screen and (max-width: 1420px){
+    .main{width: 90%;}
+    .main .box-nav ul li a span {font-size: 18px;}
+    .main .box-nav ul li a {font-size: 16px;}
+}
+@media screen and (max-width: 1120px){
+    .main .box-nav .lf-center p {font-size: 32px;}
+    .form {width: 80%;}
 }

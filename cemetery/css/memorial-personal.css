@@ -34,9 +34,8 @@
 
 }*/
 .peoples li {
-    margin-bottom: 64px;
     width: 20%;
-    margin: 0 2.3% 64px;
+    margin: 0 2% 64px;
     display: inline-block;
     text-align: center;
     border-bottom: 1px solid #d1d1d1;
@@ -74,4 +73,13 @@
 .page .num{
     width: 38px;
     height: 38px;
+}
+@media screen and (max-width: 1420px){
+    .main{width: 90%;}
+    .main .box-nav ul li a span {font-size: 18px;}
+    .main .box-nav ul li a {font-size: 16px;}
+}
+@media screen and (max-width: 1120px){
+    .main .box-nav .lf-center p {font-size: 32px;}
+    .reserve .form {width: 80%;}
 }

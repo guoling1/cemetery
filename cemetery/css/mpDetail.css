@@ -197,3 +197,12 @@
 .form .code canvas{
     vertical-align: top;
 }
+@media screen and (max-width: 1420px){
+    .main{width: 90%;}
+    .main .box-nav ul li a span {font-size: 18px;}
+    .main .box-nav ul li a {font-size: 16px;}
+}
+@media screen and (max-width: 1120px){
+    .main .box-nav .lf-center p {font-size: 32px;}
+    .comment .form {width: 70%;}
+}

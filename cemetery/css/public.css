@@ -86,8 +86,7 @@
 }
 .swiper-wrapper img{
     width: 100%;
-    /*height: auto;*/
-    height: 200px;
+    height: auto;
 }
 .swiper-button-prev{
     width: 57px;
@@ -252,4 +251,13 @@
     font-weight: bold;
     color: #980c21;
     padding: 20px;
+}
+@media screen and (max-width: 1420px){
+    .head-box,.banner-box .swiper-wrapper img,.banner-box,.foot-box{min-width: 100%;}
+    .head-box .head,.content-box .content-list,.main-box .main,.foot{width: 90%;}
+}
+@media screen and (max-width: 1120px){
+    .head-box .head .logo img{height: 80px;}
+    .head-box .search {margin-top: 30px;}
+    .content-box {top: 160px;}
 }

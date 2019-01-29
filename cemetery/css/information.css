@@ -105,6 +105,9 @@
     font-size: 20px;
     color: #000;
     line-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .main .box-rt .con li .con-rt .detail{
     overflow: hidden;
@@ -143,4 +146,12 @@
 .page .active{
     background: #7d0000;
     color: #fff;
+}
+@media screen and (max-width: 1420px){
+    .main{width: 90%;}
+    .main .box-nav ul li a span {font-size: 18px;}
+    .main .box-nav ul li a {font-size: 16px;}
+}
+@media screen and (max-width: 1120px){
+    .main .box-nav .lf-center p {font-size: 32px;}
 }
