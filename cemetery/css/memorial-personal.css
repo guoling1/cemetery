@@ -82,4 +82,5 @@
 @media screen and (max-width: 1120px){
     .main .box-nav .lf-center p {font-size: 32px;}
     .reserve .form {width: 80%;}
+    .peoples li .name {font-size: 14px;white-space:nowrap;}
 }

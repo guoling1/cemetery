@@ -9,8 +9,8 @@ $(".footerPage").load("footer.html",function (result) {
     $.get('js/footer.js');
 });
 
-var GLOBEL_URl = "http://api.jjlylsly.cn/Ajax/cms.ashx";
-var GLOBEL_IP = "http://api.jjlylsly.cn";
+var GLOBEL_URl = "http://lslyapi.t06.cn/Ajax/cms.ashx";
+var GLOBEL_IP = "http://lslyapi.t06.cn";
 //获取url参数
 $.Request = function (name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");

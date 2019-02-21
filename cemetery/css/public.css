@@ -256,8 +256,12 @@
     .head-box,.banner-box .swiper-wrapper img,.banner-box,.foot-box{min-width: 100%;}
     .head-box .head,.content-box .content-list,.main-box .main,.foot{width: 90%;}
 }
+@media screen and (max-width: 1300px) {
+    .content-box .content-list .content-li {padding: 8px 12px 0;font-size: 18px;height: 50px;}
+}
 @media screen and (max-width: 1120px){
     .head-box .head .logo img{height: 80px;}
     .head-box .search {margin-top: 30px;}
     .content-box {top: 160px;}
+    .content-box .content-list .content-li {padding: 8px 10px 0;font-size: 16px;height: 40px;}
 }

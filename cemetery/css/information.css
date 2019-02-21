@@ -34,6 +34,7 @@
     position: relative;
     height: 57px;
     line-height: 57px;
+    white-space:nowrap;
 }
 .main .box-nav ul li.active{
     background: #980c21;
@@ -57,7 +58,7 @@
     color: #fff;
 }
 .main .box-nav ul li a span{
-    margin: 0 20px 0 65px;
+    margin: 0 2% 0 7%;
     font-size: 20px;
     font-weight: bold;
 }

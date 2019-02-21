@@ -89,8 +89,23 @@
     left: 43%;
     width: 150px;
     bottom: 10%;
+    z-index: 1;
 }
 .right{
     right: 42%;
     bottom: 207px;
+}
+@media screen and (max-width: 1230px){
+    .bottom .peopleNum {height: 65px;}
+    .bottom .peopleNum p {margin-left: 89px;font-size: 23px;}
+    .flower_group {bottom: 109px;}
+    .img-group {width: 601px;}
+    .img-group .item {width: 115px;height: 96px;}
+}
+@media screen and (max-width: 1123px){
+    .flower_group {bottom: 156px;}
+}
+@media screen and (max-width: 1070px){
+    .bottom .peopleNum {height: 50px;bottom: 17px;}
+    .bottom .peopleNum p {margin-left: 68px;font-size: 20px;}
 }
