@@ -86,7 +86,7 @@
     bottom: 207px;
 }
 .center{
-    left: 43%;
+    left: 44.7%;
     width: 150px;
     bottom: 10%;
     z-index: 1;
@@ -95,7 +95,11 @@
     right: 42%;
     bottom: 207px;
 }
+@media screen and (max-width: 1480px){
+    .center{left: 44%;}
+}
 @media screen and (max-width: 1230px){
+    .center{left: 43%;}
     .bottom .peopleNum {height: 65px;}
     .bottom .peopleNum p {margin-left: 89px;font-size: 23px;}
     .flower_group {bottom: 109px;}
@@ -104,8 +108,26 @@
 }
 @media screen and (max-width: 1123px){
     .flower_group {bottom: 156px;}
+    .center{left: 42.2%;}
+    .right{right: 40%}
+    .left{left: 37.5%}
 }
-@media screen and (max-width: 1070px){
-    .bottom .peopleNum {height: 50px;bottom: 17px;}
-    .bottom .peopleNum p {margin-left: 68px;font-size: 20px;}
+@media screen and (max-width: 1090px){
+    .bottom .peopleNum {height: 46px;bottom: 17px;}
+    .bottom .peopleNum p {margin-left: 60px;font-size: 18px;}
+}
+@media screen and (max-width: 990px){
+    .center{left: 41.2%;}
+    .right{right: 38%}
+    .left{left: 35.5%}
+    .bottom .peopleNum {height: 45px;bottom: 15px;}
+    .bottom .peopleNum p {margin-left: 55px;font-size: 14px;}
+}
+@media screen and (max-width: 810px){
+    .center{left: 39.2%;}
+    .right{right: 36%}
+    .left{left: 33.5%}
+}
+@media screen and (max-height: 840px){
+    .right,.left{bottom: 29%}
 }

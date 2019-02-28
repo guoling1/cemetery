@@ -39,6 +39,13 @@ for (var i=0;i<aItem.length;i++){
         flower_group.style.display="none"
     }
 }
+$(window).resize(function () {          //当浏览器大小变化时
+    document.getElementsByClassName('main')[0].style.height=(document.body.clientHeight-202)+'px'
+    console.log($(window).height());          //浏览器时下窗口可视区域高度
+    console.log($(document).height());        //浏览器时下窗口文档的高度
+    console.log($(document.body).height());   //浏览器时下窗口文档body的高度
+    console.log($(document.body).outerHeight(true)); //浏览器时下窗口文档body的总高度 包括border padding margin
+});
 function addSacrificeClick() {
     $.ajax({
         type: 'POST',
