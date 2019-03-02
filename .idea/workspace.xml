@@ -2,7 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd0942ae-e86b-4e4c-b97c-edb15e4b0bbd" name="Default" comment="接口">
+      <change afterPath="$PROJECT_DIR$/cemetery/images/section2-2 (1).png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/banner-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/banner-left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/banner-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/banner-right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/banner1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/banner1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/banner2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/banner2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/banner3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/banner3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/banner4.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/banner4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/dd1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/dd1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/dd2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/dd2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/guan.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/guan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/guan1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/guan1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/guan2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/guan2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/guan3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/guan3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/index-banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/index-banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/index-banner1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/index-banner1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/info-title.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/info-title.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/information.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/information.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/introduce.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/introduce.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/li.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/li.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/new2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/new2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/new3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/new3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/people-tit.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/people-tit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/people-tit11.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/people-tit11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/people-tit3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/people-tit3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section2-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section2-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section2-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section2-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section2-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section2-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section2-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section2-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section4.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section5-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section5-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section5-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section5-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section5-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section5-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section5-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section5-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/section5-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/section5-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cemetery/images/矩形 48.png" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/images/矩形 48.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,43 +51,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/cemetery/flower.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/cemetery/css/flower.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="109" column="24" lean-forward="true" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cemetery/js/flower.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="326">
-                  <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cemetery/flower.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cemetery/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3894">
+              <caret line="171" column="5" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -177,6 +197,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,33 +214,32 @@
               <item name="cemetery" type="b2602c69:ProjectViewProjectNode" />
               <item name="cemetery" type="462c0819:PsiDirectoryNode" />
               <item name="cemetery" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/WHwofinance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\product\cemetery" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\product\cemetery\cemetery\images" />
       <recent name="D:\product\cemetery\m\images" />
       <recent name="D:\product\cemetery\images" />
       <recent name="D:\product\cemetery" />
       <recent name="D:\product\cemetery\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\product\cemetery" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -284,7 +304,8 @@
       <workItem from="1550304788447" duration="991000" />
       <workItem from="1550709783032" duration="7396000" />
       <workItem from="1551231577908" duration="36000" />
-      <workItem from="1551320668751" duration="2698000" />
+      <workItem from="1551320668751" duration="3312000" />
+      <workItem from="1551490975612" duration="2179000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1543051606299</created>
@@ -395,10 +416,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209150000" />
+    <option name="totallyTimeSpent" value="211943000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="503" y="5" width="1378" height="1049" extended-state="1" />
+    <frame x="503" y="5" width="1378" height="1049" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16119403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -433,16 +454,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="接口" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/m/public-new-detail1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="108" selection-end-column="5" />
-          <folding>
-            <element signature="e#28#32#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cemetery/memorial-personal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2508" />
@@ -719,13 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cemetery/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="171" column="5" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cemetery/css/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -767,6 +771,20 @@
     <entry file="file://$PROJECT_DIR$/cemetery/css/information.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/cemetery/flower.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cemetery/css/flower.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="109" column="24" lean-forward="true" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cemetery/js/flower.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -774,17 +792,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cemetery/flower.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/cemetery/images/index-banner1.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cemetery/css/flower.css">
+    <entry file="file://$PROJECT_DIR$/cemetery/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="109" column="24" lean-forward="true" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
+        <state relative-caret-position="3894">
+          <caret line="171" column="5" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
         </state>
       </provider>
     </entry>
