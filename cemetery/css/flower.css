@@ -20,8 +20,8 @@
     display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
     justify-content: space-evenly;
     margin: 0 auto 10px;
-    width: 340px;
-    height: 88px;
+    width: 295px;
+    height: 70px;
     background: url(../images/bottom_center.png) no-repeat center;
     background-size: 100% auto;
 }
@@ -73,7 +73,7 @@
     margin-top: 12px;
 }
 .flower{
-    width: 70px;
+    width: 50px;
     position: absolute;
     bottom: 15%;
 }
@@ -82,24 +82,24 @@
     height: auto;
 }
 .left{
-    left: 40.5%;
+    left: 42.5%;
     bottom: 207px;
 }
 .center{
     left: 44.7%;
-    width: 150px;
+    width: 120px;
     bottom: 10%;
     z-index: 1;
 }
 .right{
-    right: 42%;
+    right: 44%;
     bottom: 207px;
 }
 @media screen and (max-width: 1480px){
-    .center{left: 44%;}
+    .center{left: 45%;}
 }
 @media screen and (max-width: 1230px){
-    .center{left: 43%;}
+    .center{left: 44%;}
     .bottom .peopleNum {height: 65px;}
     .bottom .peopleNum p {margin-left: 89px;font-size: 23px;}
     .flower_group {bottom: 109px;}
@@ -108,7 +108,7 @@
 }
 @media screen and (max-width: 1123px){
     .flower_group {bottom: 156px;}
-    .center{left: 42.2%;}
+    .center{left: 43.2%;}
     .right{right: 40%}
     .left{left: 37.5%}
 }
@@ -117,17 +117,23 @@
     .bottom .peopleNum p {margin-left: 60px;font-size: 18px;}
 }
 @media screen and (max-width: 990px){
-    .center{left: 41.2%;}
+    .center{left: 42.2%;}
     .right{right: 38%}
     .left{left: 35.5%}
     .bottom .peopleNum {height: 45px;bottom: 15px;}
     .bottom .peopleNum p {margin-left: 55px;font-size: 14px;}
 }
 @media screen and (max-width: 810px){
-    .center{left: 39.2%;}
+    .center{left: 40%;}
     .right{right: 36%}
     .left{left: 33.5%}
 }
+@media screen and (max-height: 890px){
+    .right,.left{bottom: 28.5%}
+}
 @media screen and (max-height: 840px){
     .right,.left{bottom: 29%}
+}
+@media screen and (max-height: 670px){
+    .right,.left{bottom: 27.8%}
 }

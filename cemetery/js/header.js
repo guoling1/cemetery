@@ -107,7 +107,7 @@ $.ajax({
                         window.location.href='memorial-personal.html?id='+this.getAttribute('data-id');
                         // window.location.href='mpDetail.html?id='+this.getAttribute('data-id');
                     }else if(this.getAttribute('data-type')=='panorama'){
-                        window.open('https://720yun.com/t/qz2w57jew3hjanp5s9?pano_id=2dPoXRpwEMqMSlTx');
+                        window.open('https://720yun.com/t/gygmaploljh5yazws9');
                     }
                 }
             }

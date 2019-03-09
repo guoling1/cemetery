@@ -51,7 +51,8 @@ $('.submit').click(function () {
         visitingDate: $("#datepicker").val(),
         bookNum: $("#bookNum").val(),
         type: $("#type option:selected").text(),
-        linkMan: $("#linkMan").val()
+        linkMan: $("#linkMan").val(),
+        LinkTel: $("#LinkTel").val()
     }
     var flag = true;
     for (var i in params) {
@@ -76,6 +77,7 @@ $('.submit').click(function () {
                     $("#bookNum").val('')
                     $("#type option:selected").text('成人')
                     $("#linkMan").val('')
+                    $("#LinkTel").val('')
                     $(".codeInp").val('')
                     verifyCode.refresh()
                 }

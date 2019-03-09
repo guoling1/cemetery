@@ -65,7 +65,7 @@ $.ajax({
                     oA.href='memorial-personal.html?id='+aList[i].ContentTypeId;
                 }else if(aList[i].Type=='panorama'){
                     // oA.href='digitization.html?id='+aList[i].ContentTypeId;
-                    oA.href='https://720yun.com/t/qz2w57jew3hjanp5s9?pano_id=2dPoXRpwEMqMSlTx';
+                    oA.href='https://720yun.com/t/gygmaploljh5yazws9';
                     oA.target = "_black"
                 }
             }else {
