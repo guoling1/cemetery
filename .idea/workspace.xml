@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cd0942ae-e86b-4e4c-b97c-edb15e4b0bbd" name="Default" comment="优化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/m/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/m/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,35 +25,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/m/js/public.js">
+        <entry file="file://$PROJECT_DIR$/cemetery/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1518">
-              <caret line="68" column="53" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="53" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cemetery/js/public.js">
+        <entry file="file://$PROJECT_DIR$/m/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#28#32#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cemetery/css/flower.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+            <state relative-caret-position="198">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -143,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/memorial-personal.html" />
         <option value="$PROJECT_DIR$/mpDetail.html" />
         <option value="$PROJECT_DIR$/memorial-public.html" />
         <option value="$PROJECT_DIR$/css/mpDetail.css" />
@@ -194,6 +175,7 @@
         <option value="$PROJECT_DIR$/cemetery/css/flower.css" />
         <option value="$PROJECT_DIR$/m/reservation-info.html" />
         <option value="$PROJECT_DIR$/cemetery/js/public.js" />
+        <option value="$PROJECT_DIR$/m/footer.html" />
       </list>
     </option>
   </component>
@@ -219,24 +201,7 @@
             <path>
               <item name="cemetery" type="b2602c69:ProjectViewProjectNode" />
               <item name="cemetery" type="462c0819:PsiDirectoryNode" />
-              <item name="cemetery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cemetery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cemetery" type="462c0819:PsiDirectoryNode" />
-              <item name="cemetery" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cemetery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cemetery" type="462c0819:PsiDirectoryNode" />
               <item name="m" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cemetery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cemetery" type="462c0819:PsiDirectoryNode" />
-              <item name="m" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -334,7 +299,7 @@
       <workItem from="1552355361656" duration="4058000" />
       <workItem from="1552437994834" duration="669000" />
       <workItem from="1552460054075" duration="18000" />
-      <workItem from="1552533134035" duration="497000" />
+      <workItem from="1552533134035" duration="759000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1543051606299</created>
@@ -455,14 +420,21 @@
       <option name="project" value="LOCAL" />
       <updated>1552459432298</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="优化">
+      <created>1552533820101</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1552533820101</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221752000" />
+    <option name="totallyTimeSpent" value="222014000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="28" width="1131" height="1021" extended-state="0" />
+    <frame x="503" y="90" width="1131" height="1021" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20311071" />
@@ -499,13 +471,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="优化" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cemetery/public-new-detail1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="115" column="105" selection-start-line="115" selection-start-column="105" selection-end-line="115" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cemetery/public-new-detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -769,13 +734,6 @@
     <entry file="file://$PROJECT_DIR$/cemetery/images/index-banner1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cemetery/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cemetery/js/reservation-info.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3036">
@@ -800,13 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cemetery/css/flower.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -839,12 +790,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cemetery/js/public.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        <state relative-caret-position="308">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#28#32#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cemetery/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cemetery/css/flower.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/m/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
