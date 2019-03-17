@@ -41,7 +41,11 @@ $(document).ready(function () {
         dayViewHeaderFormat: "YYYY年 MMMM"
     });
 })
-
+var year = new Date().getFullYear();
+var month = new Date().getMonth()+1;
+var day = new Date().getDate();
+var date = year+'-'+ (month<10?'0'+month:month)+'-'+(day<10?'0'+day:day);
+$("#datepicker").val(date);
 var codeFlag = false;
 //提交留言
 $('.submit').click(function () {
@@ -80,6 +84,7 @@ $('.submit').click(function () {
                     $("#LinkTel").val('')
                     $(".codeInp").val('')
                     verifyCode.refresh()
+                    $("#datepicker").val(date);
                 }
             })
         } else {

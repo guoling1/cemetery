@@ -1,5 +1,10 @@
 //提交留言
-var codeFlag = false
+var year = new Date().getFullYear();
+var month = new Date().getMonth()+1;
+var day = new Date().getDate();
+var date = year+'-'+ (month<10?'0'+month:month)+'-'+(day<10?'0'+day:day);
+$("#datepicker").val(date);
+var codeFlag = false;
 $('.submit').click(function () {
     var params = {
         oper: 'addReserve',
@@ -8,20 +13,21 @@ $('.submit').click(function () {
         bookNum: $("#bookNum").val(),
         type: $("#type option:selected").text(),
         linkMan: $("#linkMan").val(),
-        idCard: $("#idCard").val(),
+        LinkTel: $("#LinkTel").val(),
     }
     var flag = true;
-    for(var i in params){
+    for (var i in params) {
         console.log(params[i])
-        if(!params[i]){
+        if (!params[i]) {
             flag = false;
             break;
         }
     }
-    if(codeFlag){
-        if(!flag){
-            alert("请填写完整内容")
-        }else {
+
+    if (!flag) {
+        alert("请填写完整内容")
+    } else {
+        if (codeFlag) {
             $.ajax({
                 type: 'POST',
                 url: GLOBEL_URl,
@@ -34,14 +40,17 @@ $('.submit').click(function () {
                     $("#bookNum").val('')
                     $("#type option:selected").text('成人')
                     $("#linkMan").val('')
-                    $("#idCard").val('')
+                    $("#LinkTel").val('')
+                    verifyCode.refresh();
+                    $("#datepicker").val(date);
+                    $(".codeInp").val('')
                 }
             })
         }
     }
 })
 
-var GVerify=function (id) {
+var GVerify = function (id) {
     function GVerify(options) { //创建一个图形验证码对象，接收options对象为参数
         this.options = { //默认options参数值
             id: "", //容器Id
@@ -51,11 +60,11 @@ var GVerify=function (id) {
             type: "blend", //图形验证码默认类型blend:数字字母混合类型、number:纯数字、letter:纯字母
             code: ""
         }
-        if(Object.prototype.toString.call(options) == "[object Object]"){//判断传入参数类型
-            for(var i in options) { //根据传入的参数，修改默认参数值
+        if (Object.prototype.toString.call(options) == "[object Object]") {//判断传入参数类型
+            for (var i in options) { //根据传入的参数，修改默认参数值
                 this.options[i] = options[i];
             }
-        }else{
+        } else {
             this.options.id = options.id;
         }
 
@@ -71,7 +80,7 @@ var GVerify=function (id) {
         version: '1.0.0',
 
         /**初始化方法**/
-        _init: function() {
+        _init: function () {
             var con = document.getElementById(this.options.id);
             var canvas = document.createElement("canvas");
             /*this.options.width = con.offsetWidth > 0 ? con.offsetWidth : "100";
@@ -84,16 +93,16 @@ var GVerify=function (id) {
             console.log(con)
             con.appendChild(canvas);
             var parent = this;
-            canvas.onclick = function(){
+            canvas.onclick = function () {
                 parent.refresh();
             }
         },
 
         /**生成验证码**/
-        refresh: function() {
+        refresh: function () {
             this.options.code = '';
             var canvas = document.getElementById(this.options.canvasId);
-            if(canvas.getContext) {
+            if (canvas.getContext) {
                 var ctx = canvas.getContext('2d');
             }
             ctx.textBaseline = "middle";
@@ -101,19 +110,19 @@ var GVerify=function (id) {
             ctx.fillStyle = randomColor(180, 240);
             ctx.fillRect(0, 0, this.options.width, this.options.height);
 
-            if(this.options.type == "blend") { //判断验证码类型
+            if (this.options.type == "blend") { //判断验证码类型
                 var txtArr = this.options.numArr.concat(this.options.letterArr);
-            } else if(this.options.type == "number") {
+            } else if (this.options.type == "number") {
                 var txtArr = this.options.numArr;
             } else {
                 var txtArr = this.options.letterArr;
             }
 
-            for(var i = 1; i <= 4; i++) {
+            for (var i = 1; i <= 4; i++) {
                 var txt = txtArr[randomNum(0, txtArr.length)];
                 this.options.code += txt;
                 // ctx.font = '36px SimHei';
-                ctx.font = randomNum(this.options.height/2, this.options.height) + 'px SimHei'; //随机生成字体大小
+                ctx.font = randomNum(this.options.height / 2, this.options.height) + 'px SimHei'; //随机生成字体大小
                 ctx.fillStyle = randomColor(50, 160); //随机生成字体颜色
                 /* ctx.shadowOffsetX = randomNum(-3, 3);
                 ctx.shadowOffsetY = randomNum(-3, 3);*/
@@ -131,15 +140,15 @@ var GVerify=function (id) {
                 ctx.translate(-x, -y);
             }
             /**绘制干扰线**/
-            for(var i = 0; i < 4; i++) {
+            for (var i = 0; i < 4; i++) {
                 ctx.strokeStyle = randomColor(40, 180);
                 ctx.beginPath();
-                ctx.moveTo(randomNum(0, this.options.width/2), randomNum(0, this.options.height/2));
-                ctx.lineTo(randomNum(0, this.options.width/2), randomNum(0, this.options.height));
+                ctx.moveTo(randomNum(0, this.options.width / 2), randomNum(0, this.options.height / 2));
+                ctx.lineTo(randomNum(0, this.options.width / 2), randomNum(0, this.options.height));
                 ctx.stroke();
             }
             /**绘制干扰点**/
-            for(var i = 0; i < this.options.width/4; i++) {
+            for (var i = 0; i < this.options.width / 4; i++) {
                 ctx.fillStyle = randomColor(0, 255);
                 ctx.beginPath();
                 ctx.arc(randomNum(0, this.options.width), randomNum(0, this.options.height), 1, 0, 2 * Math.PI);
@@ -148,12 +157,12 @@ var GVerify=function (id) {
         },
 
         /**验证验证码**/
-        validate: function(code){
+        validate: function (code) {
             var verifyCode = code.toLowerCase();
             var v_code = this.options.code.toLowerCase();
-            if(verifyCode == v_code){
+            if (verifyCode == v_code) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
         }
@@ -164,10 +173,12 @@ var GVerify=function (id) {
         var letterStr = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z";
         return letterStr.split(",");
     }
+
     /**生成一个随机数**/
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min) + min);
     }
+
     /**生成一个随机色**/
     function randomColor(min, max) {
         var r = randomNum(min, max);
@@ -180,12 +191,12 @@ var GVerify=function (id) {
 }
 var verifyCode = new GVerify(imgCode);
 
-$("#input").on("blur",function () {
+$("#input").on("blur", function () {
     var inputCode = $("#input").val();
-    if(verifyCode.validate($("#input").val())){
+    if (verifyCode.validate($("#input").val())) {
         console.log("验证码输入正确")
         codeFlag = true
-    }else{
+    } else {
         codeFlag = false
         alert("请输入正确的验证码")
     }
