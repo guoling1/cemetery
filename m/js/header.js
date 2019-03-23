@@ -90,3 +90,34 @@ $.ajax({
         }
     }
 })
+if(!/flower/.test(window.location.pathname)){
+$.ajax({
+    type: 'POST',
+    url: GLOBEL_URl,
+    data: {
+        oper: 'getBannerList'
+    },
+    dataType : "json",
+    success: function (data) {
+        $('.banner-box').show();
+            var swiper = document.getElementById('swiper');
+            var slider=''
+            for (var i=0;i<data.data.length;i++){
+                slider += '<div class="swiper-slide"><img src="'+GLOBEL_IP+data.data[i].ImgUrl+'" alt=""></div>'
+            }
+            $('#swiper').html(slider)
+            var mySwiper = new Swiper('.banner-swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                // navigation: {
+                //     nextEl: '.swiper-button-next',
+                //     prevEl: '.swiper-button-prev',
+                // },
+            })
+
+    }
+})
+}
