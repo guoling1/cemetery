@@ -74,6 +74,7 @@ $('.submit').click(function () {
                 url: GLOBEL_URl,
                 data: params,
                 dataType: "json",
+                crossDomain:true== !(document.all),
                 success: function (data) {
                     alert(data.msg)
                     $("#unitName").val('')

@@ -26,6 +26,7 @@ $.ajax({
     data: {
         oper: 'getConfig'
     },
+    crossDomain:true== !(document.all),
     dataType : "json",
     success: function (data) {
         $('head title').html(data.data.WebName)
@@ -87,6 +88,7 @@ function addContentClick(id) {
             oper: 'addContentClick',
             id: id
         },
+        crossDomain:true== !(document.all),
         dataType : "json",
         success: function (data) {}
     })

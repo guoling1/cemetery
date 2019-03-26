@@ -28,7 +28,10 @@ $('#select .select-ul li').each(function () {
 $('#search').click(function () {
     window.location.href="search.html?key="+$("#search_key").val();
 })
-
+window.onresize = function(){
+    var h=$('.img1').eq(0).height();
+    $(".banner-box .swiper-wrapper,.banner-box .swiper-slide").css("height",h)
+}
 $.ajax({
     type: 'POST',
     url: GLOBEL_URl,
@@ -36,6 +39,7 @@ $.ajax({
         oper: 'getContentTypeList'
     },
     dataType : "json",
+    crossDomain:true== !(document.all),
     success: function (data) {
         var aList = []
         $(data.data).each(function (ind,item) {
@@ -111,7 +115,8 @@ $.ajax({
                     }
                 }
             }
-            document.getElementsByClassName("content-list")[0].appendChild(oContent)
+            // document.getElementsByClassName("content-list")[0].appendChild(oContent);
+            $('.content-list').eq(0).append(oContent)
         }
     }
 })
@@ -122,27 +127,49 @@ if(!/flower/.test(window.location.pathname)) {
         data: {
             oper: 'getBannerList'
         },
+        crossDomain:true== !(document.all),
         dataType: "json",
         success: function (data) {
-            $('.banner-box').show();
-            var swiper = document.getElementById('swiper');
             var slider = ''
             for (var i = 0; i < data.data.length; i++) {
-                slider += '<div class="swiper-slide"><img src="' + GLOBEL_IP + data.data[i].ImgUrl + '" alt=""></div>'
+                slider += '<div class="swiper-slide"><img class="img1" src="' + GLOBEL_IP + data.data[i].ImgUrl + '" alt=""></div>'
             }
-            $('#swiper').html(slider)
-            var mySwiper = new Swiper('.banner-swiper', {
-                loop: true,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+            $('#swiper').html(slider);
+            // var mySwiper = new Swiper('.banner-swiper', {
+            //     loop: true,
+            //     autoplay: {
+            //         delay: 2500,
+            //         disableOnInteraction: false,
+            //     },
+            //     navigation: {
+            //         nextEl: '.swiper-button-next',
+            //         prevEl: '.swiper-button-prev',
+            //     },
+            // })
+            $('.img1').eq(0).on('load',function () {
+                $('.banner-box').show();
+                var mySwiper = new Swiper('.banner-swiper', {
+                    autoplay : 2500,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev'
+                        },
+                    // pagination: '.pagination',
+                    loop:true
+                    // grabCursor: true,
+                    // paginationClickable: true
+                })
+                $('.arrow-left').on('click', function(e){
+                    e.preventDefault();
+                    mySwiper.swipePrev();
+                })
+                $('.arrow-right').on('click', function(e) {
+                    e.preventDefault();
+                    mySwiper.swipeNext();
+                })
+                var h=$('.img1').eq(0).height();
+                $(".banner-box .swiper-wrapper,.banner-box .swiper-slide").css("height",h)
             })
-
         }
     })
 }

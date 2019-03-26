@@ -1,17 +1,18 @@
 <div class="head-box">
-    <div class="head">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="">
-                <h1>晋冀鲁豫烈士陵园</h1>
-            </a>
-        </div>
+    <div class="head clear">
         <div class="right">
             <a href="http://api.jjlylsly.cn/login.html" target="_blank" style="color: #fff">后台登录</a>
             <span>|</span>
             <span onclick="AddFavorite(window.location.href,'加入收藏');">收藏网站</span>
             <!--<a href="javascript:;" >加入收藏</a>-->
         </div>
+        <div class="logo clear">
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+                <h1>晋冀鲁豫烈士陵园</h1>
+            </a>
+        </div>
+
         <div class="search fr">
             <div class="left">
                 <input type="text" placeholder="请输入搜索内容" id="search_key">
@@ -114,13 +115,14 @@
         </div>
     </div>
     <div class="banner-box" style="display: none">
-        <div class="banner-swiper swiper-container">
+        <div class="swiper-container banner-swiper">
             <div class="swiper-wrapper" id="swiper">
-                <div class="swiper-slide"><img src="images/index-banner.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/index-banner1.png" alt=""></div>
+                <!--<div class="swiper-slide"><img src="images/index-banner.png" alt=""></div>-->
+                <!--<div class="swiper-slide"><img src="images/index-banner1.png" alt=""></div>-->
             </div>
-            <div class="swiper-button-prev"></div><!--左箭头-->
-            <div class="swiper-button-next"></div><!--右箭头-->
         </div>
+        <div class="swiper-button-prev arrow-left"></div><!--左箭头-->
+        <div class="swiper-button-next arrow-right"></div><!--右箭头-->
     </div>
+
 </div>

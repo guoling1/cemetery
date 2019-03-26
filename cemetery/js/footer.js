@@ -6,6 +6,7 @@ $.ajax({
         oper: 'getConfig'
     },
     dataType : "json",
+    crossDomain:true== !(document.all),
     success: function (data) {
         $('.foot-right').html(data.data.FootRight);
         $('#qrcode').attr('src',GLOBEL_IP+data.data.WeixinImage)

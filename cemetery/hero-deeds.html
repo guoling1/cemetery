@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>晋冀鲁豫烈士陵园</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
     <link rel="stylesheet" href="css/pagination.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/hero-deeds.css">
@@ -111,8 +111,9 @@
 </div>
 
 <div class="footerPage"></div>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/json2.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
 <script src="js/pagination.js"></script>
 <script src="js/public.js"></script>
 <script>
@@ -132,6 +133,7 @@
             pageSize: pageSize,
             pageIndex: 1
         },
+        crossDomain:true== !(document.all),
         success: function (data) {
             current = data.recordCount;
             var arr = [];
@@ -154,19 +156,12 @@
                             pageSize: pageSize,
                             pageIndex: arguments[1].pageNumber
                         },
+
+                        crossDomain:true== !(document.all),
                         success: function (data) {
                             var aLi = '';
                             $(data.data).each(function (ind, item) {
-                                aLi += `
-                                        <li>
-                                            <a href="hero-deeds-detail.html?ContentId=`+item.ContentId+`&ParentId=`+$.Request('ParentId')+`&id=`+$.Request('id')+`">
-                                                <img src="`+GLOBEL_IP+item.ImgUrl+`" alt="" class="img">
-                                                <p class="name">`+item.Title+`</p>
-                                                <p class="year"></p>
-                                            </a>
-                                        </li>
-                                `
-
+                                aLi += '<li><a href="hero-deeds-detail.html?ContentId='+item.ContentId+'&ParentId='+$.Request('ParentId')+'&id='+$.Request('id')+'"><img src="'+GLOBEL_IP+item.ImgUrl+'" alt="" class="img"><p class="name">'+item.Title+'</p><p class="year"></p></a></li>'
                             })
 
                             $('.peoples').html(aLi)

@@ -10,13 +10,20 @@
     background: #fff;
 }
 .tab{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 35px 0;
+    /*display: flex;*/
+    /*justify-content: space-evenly;*/
+    margin: 35px 0;
+    width: 100%;
+    text-align: center;
 }
 .tab a{
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
     width: 28.5%;
+    margin: 0 20px;
 }
+
 .tab a img{
     width: 100%;
     height: auto;
@@ -37,6 +44,8 @@
     width: 20%;
     margin: 0 2% 64px;
     display: inline-block;
+    *display:inline;
+    *zoom:1;
     text-align: center;
     border-bottom: 1px solid #d1d1d1;
 }

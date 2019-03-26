@@ -64,8 +64,8 @@
 }
 
 .main .box-rt{
-    padding: 40px 46px 100px;
-    width: 75.5%;
+    margin: 40px 46px 100px;
+    width: 69%;
     min-height: 450px;
 }
 .main .box-rt .bread,.main .box-rt .bread a{
@@ -106,6 +106,8 @@
     text-align: center;
     border-bottom: 1px solid #d1d1d1;
     display: inline-block;
+    *display:inline;
+    *zoom:1;
 }
 .peoples li img{
     width: 100%;

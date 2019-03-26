@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>晋冀鲁豫烈士陵园</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/hero-deeds-detail.css">
 </head>
@@ -61,8 +61,9 @@
 </div>
 
 <div class="footerPage"></div>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/json2.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
 <script src="js/public.js"></script>
 <script>
     leftMenu();
@@ -75,6 +76,7 @@
             oper: 'getContent',
             id: $.Request('ContentId')
         },
+        crossDomain:true== !(document.all),
         success: function (data) {
             $('.title span').html(data.data.Title+'<i></i>')
             $('.title p').html('[发布时间：'+data.data.CreateDate+' | 浏览'+data.data.Click+' 次]');

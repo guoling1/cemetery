@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>晋冀鲁豫烈士陵园</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
     <link rel="stylesheet" href="css/pagination.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/information.css">
@@ -109,8 +109,9 @@
 </div>
 
 <div class="footerPage"></div>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/json2.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
 <script src="js/pagination.js"></script>
 <script src="js/public.js"></script>
 <script>
@@ -139,6 +140,7 @@
             pageSize: pageSize,
             pageIndex: 1
         },
+        crossDomain:true== !(document.all),
         success: function (data) {
             current = data.recordCount;
             var arr = [];
@@ -161,23 +163,11 @@
                             pageSize: pageSize,
                             pageIndex: arguments[1].pageNumber
                         },
+                        crossDomain:true== !(document.all),
                         success: function (data) {
                             var aLi = '';
                             $(data.data).each(function (ind, item) {
-                                aLi += `
-                                    <li class="clear">
-                <a href="public-new-detail1.html?ContentId=`+item.ContentId+`&ParentId=`+$.Request('ParentId')+`&id=`+$.Request('id')+`">
-                    <div class="con-lf fl">
-                        <p class="day">`+formatDate(item.CreateDate)[1]+`</p>
-                        <p class="mouth">`+formatDate(item.CreateDate)[0]+`</p>
-                    </div>
-                    <div class="con-rt">
-                        <p class="title">`+item.Title+`</p>
-                        <div class="detail">`+item.Summary+`</div>
-                    </div>
-                </a>
-            </li>
-                                `
+                                aLi += '<li class="clear"><a href="public-new-detail1.html?ContentId='+item.ContentId+'&ParentId='+$.Request('ParentId')+'&id='+$.Request('id')+'"><div class="con-lf fl"><p class="day">'+formatDate(item.CreateDate)[1]+'</p><p class="mouth">'+formatDate(item.CreateDate)[0]+'</p></div><div class="con-rt"><p class="title">'+item.Title+'</p><div class="detail">'+item.Summary+'</div></div></a></li>'
                             })
                             $('#detail').html(aLi)
                         }
