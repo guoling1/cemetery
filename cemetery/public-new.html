@@ -167,7 +167,7 @@
                         success: function (data) {
                             var aLi = '';
                             $(data.data).each(function (ind, item) {
-                                aLi += '<li class="clear"><a href="public-new-detail.html?id='+item.ContentId+'&parentName='+parentName+'"><div class="con-lf fl"><p class="day">`+formatDate(item.CreateDate)[1]+`</p><p class="mouth">'+formatDate(item.CreateDate)[0]+'</p></div><div class="con-rt"><p class="title">'+item.Title+'</p><div class="detail">'+item.Summary+'</div></div></a></li>'
+                                aLi += '<li class="clear"><a href="public-new-detail.html?id='+item.ContentId+'&parentName='+parentName+'"><div class="con-lf fl"><p class="day">'+formatDate(item.CreateDate)[1]+'</p><p class="mouth">'+formatDate(item.CreateDate)[0]+'</p></div><div class="con-rt"><p class="title">'+item.Title+'</p><div class="detail">'+item.Summary+'</div></div></a></li>'
                             })
                             $('#detail').html(aLi)
                         }

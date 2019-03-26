@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>晋冀鲁豫烈士陵园</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/suggestion.css">
+
 </head>
 <body>
 <div class="headerPage"></div>
@@ -70,7 +74,8 @@
                 <p>验证码：</p>
                 <div class="right">
                     <input type="text" class="codeInp" id="input" name="messageCode">
-                    <span id="imgCode"></span>
+                    <span id="imgCode"><canvas id="verifyCanvas" width="100" height="40" style="cursor: pointer;"></canvas></span>
+
                 </div>
             </div>
             <button class="submit">提  交</button>
@@ -79,8 +84,9 @@
 </div>
 
 <div class="footerPage"></div>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/json2.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
 <script src="js/public.js"></script>
 <script src="js/suggestion.js"></script>
 </body>

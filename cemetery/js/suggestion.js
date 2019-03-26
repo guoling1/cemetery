@@ -12,9 +12,10 @@ $('.submit').click(function () {
                     oper: 'addFeedback',
                     content: $("#content").val(),
                     name: $("#name").val(),
-                    Title: $("#Title").val(),
+                    Title: $("#Title").val()
                 },
                 dataType: "json",
+                crossDomain:true== !(document.all),
                 success: function (data) {
                     alert(data.msg)
                 }
@@ -58,16 +59,23 @@ var GVerify = function (id) {
         /**初始化方法**/
         _init: function () {
             var con = document.getElementById(this.options.id);
-            var canvas = document.createElement("canvas");
+            // var canvas = document.createElement("canvas");
+            var canvas = document.getElementById(this.options.canvasId);
             /*this.options.width = con.offsetWidth > 0 ? con.offsetWidth : "100";
             this.options.height = con.offsetHeight > 0 ? con.offsetHeight : "30";*/
-            canvas.id = this.options.canvasId;
-            canvas.width = this.options.width;
-            canvas.height = this.options.height;
-            canvas.style.cursor = "pointer";
-            canvas.innerHTML = "您的浏览器版本不支持canvas";
-            console.log(con)
-            con.appendChild(canvas);
+            // canvas.id = this.options.canvasId;
+            // canvas.width = this.options.width;
+            // canvas.height = this.options.height;
+            // canvas.style.cursor = "pointer";
+            // canvas.innerHTML = "您的浏览器版本不支持canvas";
+            // console.log(con)
+            // con.appendChild(canvas);
+            // G_vmlCanvasManager.initElement()
+            // if(!(document.getElementById("imgCode").getContext)){
+            //     G_vmlCanvasManager.initElement(document.getElementById("imgCode"));
+            // }
+            this.options.width = con.offsetWidth > 0 ? con.offsetWidth : "100";//如果有宽度就使用自己的，没有就默认100
+            this.options.height = con.offsetHeight > 0 ? con.offsetHeight : "30";//如果有长度就使用自己的，没有就默认30
             var parent = this;
             canvas.onclick = function () {
                 parent.refresh();

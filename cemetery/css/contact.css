@@ -28,8 +28,8 @@
 
 }
 .main .box-rt{
-    padding: 40px 46px 100px;
-    width: 75.5%;
+    margin: 40px 46px 100px;
+    width: 68%;
     min-height: 450px;
 }
 .main .box-rt .bread,.main .box-rt .bread a{
