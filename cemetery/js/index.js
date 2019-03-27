@@ -80,7 +80,8 @@ $.ajax({
             var newSwiper = new Swiper('.news-swiper', {
                 autoplay : 2500,
                 // pagination: '.pagination',
-                loop:true
+                loop:true,
+                autoplayDisableOnInteraction:false
             })
             // var h=$('.img2').eq(0).height();
             $(".news-swiper .swiper-wrapper,.news-swiper .swiper-slide").css("height",350)
@@ -97,7 +98,7 @@ $.ajax({
     data: {
         oper: 'getContentList',
         typeid: '43c18d0e-0772-451a-912d-d36bcacace63',
-        pageSize: 6,
+        pageSize: 7,
         pageIndex: 1
     },
     success: function (data) {
@@ -269,6 +270,7 @@ $.ajax({
                 },
                 // pagination: '.pagination',
                 loop:true,
+                autoplayDisableOnInteraction:false,
                 slidesPerView: 4,
                     spaceBetween: 30
                 // grabCursor: true,

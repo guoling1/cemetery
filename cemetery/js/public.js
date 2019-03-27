@@ -46,36 +46,39 @@ function leftMenu() {
             $(".lf-center p").html(parentName)
         }
     }
-
+    var num=0
     for (var i=0;i<menuList.length;i++){
-        var oLi = document.createElement('li');
-        if($.Request('id')==menuList[i].ContentTypeId){
-            oLi.className = 'active'
-            var oI = document.createElement('i');
-            oLi.appendChild(oI)
-            if(menuList[i].ContentHtml){
-                menuList[i].ContentHtml=menuList[i].ContentHtml.replace(/src="\/res/g,'src="'+GLOBEL_IP+'/res')
+        if(menuList[i].IsNav){
+            num=num+1
+            var oLi = document.createElement('li');
+            if($.Request('id')==menuList[i].ContentTypeId){
+                oLi.className = 'active'
+                var oI = document.createElement('i');
+                oLi.appendChild(oI)
+                if(menuList[i].ContentHtml){
+                    menuList[i].ContentHtml=menuList[i].ContentHtml.replace(/src="\/res/g,'src="'+GLOBEL_IP+'/res')
+                }
+
+                $("#detail").html(menuList[i].ContentHtml)
+                $(".bread").html('<a href="index.html">首页</a> &gt; <a href="javascript:;">'+menuList[i].FullName+'</a>')
+
             }
-
-            $("#detail").html(menuList[i].ContentHtml)
-            $(".bread").html('<a href="index.html">首页</a> &gt; <a href="javascript:;">'+menuList[i].FullName+'</a>')
-
+            var oA = document.createElement('a');
+            if(menuList[i].Type=='about') {
+                oA.href = 'public-content.html?id=' + menuList[i].ContentTypeId + '&ParentId=' + menuList[i].ParentId;
+            }else if(menuList[i].Type=='reserve'){
+                oA.href='reservation-info.html?id=' + menuList[i].ContentTypeId + '&ParentId=' + menuList[i].ParentId;
+            }else if(menuList[i].Type=='feedback'){
+                oA.href='suggestion.html?id=' + menuList[i].ContentTypeId + '&ParentId=' + menuList[i].ParentId;
+            }else if(menuList[i].Type=='news'){
+                oA.href='public-new1.html?id='+menuList[i].ContentTypeId+'&ParentId='+menuList[i].ParentId;
+            }else if(menuList[i].Type=='picture'){
+                oA.href='hero-deeds.html?name='+menuList[i].FullName+'&id='+menuList[i].ContentTypeId+'&ParentId='+menuList[i].ParentId;
+            }
+            oA.innerHTML = '<span>0'+num+'</span>'+(menuList[i].EnName||menuList[i].FullName);
+            oLi.appendChild(oA);
+            document.getElementById('left-menu').appendChild(oLi)
         }
-        var oA = document.createElement('a');
-        if(menuList[i].Type=='about') {
-            oA.href = 'public-content.html?id=' + menuList[i].ContentTypeId + '&ParentId=' + menuList[i].ParentId;
-        }else if(menuList[i].Type=='reserve'){
-            oA.href='reservation-info.html?id=' + menuList[i].ContentTypeId + '&ParentId=' + menuList[i].ParentId;
-        }else if(menuList[i].Type=='feedback'){
-            oA.href='suggestion.html?id=' + menuList[i].ContentTypeId + '&ParentId=' + menuList[i].ParentId;
-        }else if(menuList[i].Type=='news'){
-            oA.href='public-new1.html?id='+menuList[i].ContentTypeId+'&ParentId='+menuList[i].ParentId;
-        }else if(menuList[i].Type=='picture'){
-            oA.href='hero-deeds.html?name='+menuList[i].FullName+'&id='+menuList[i].ContentTypeId+'&ParentId='+menuList[i].ParentId;
-        }
-        oA.innerHTML = '<span>0'+menuList[i].Sort+'</span>'+(menuList[i].EnName||menuList[i].FullName);
-        oLi.appendChild(oA);
-        document.getElementById('left-menu').appendChild(oLi)
     }
 }
 

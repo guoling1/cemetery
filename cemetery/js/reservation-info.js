@@ -96,7 +96,7 @@ $('.submit').click(function () {
 
 })
 
-
+/*
 var GVerify = function (id) {
     function GVerify(options) { //创建一个图形验证码对象，接收options对象为参数
         this.options = { //默认options参数值
@@ -123,15 +123,15 @@ var GVerify = function (id) {
     }
 
     GVerify.prototype = {
-        /**版本号**/
+        /!**版本号**!/
         version: '1.0.0',
 
-        /**初始化方法**/
+        /!**初始化方法**!/
         _init: function () {
             var con = document.getElementById(this.options.id);
             var canvas = document.createElement("canvas");
-            /*this.options.width = con.offsetWidth > 0 ? con.offsetWidth : "100";
-            this.options.height = con.offsetHeight > 0 ? con.offsetHeight : "30";*/
+            /!*this.options.width = con.offsetWidth > 0 ? con.offsetWidth : "100";
+            this.options.height = con.offsetHeight > 0 ? con.offsetHeight : "30";*!/
             canvas.id = this.options.canvasId;
             canvas.width = this.options.width;
             canvas.height = this.options.height;
@@ -145,7 +145,7 @@ var GVerify = function (id) {
             }
         },
 
-        /**生成验证码**/
+        /!**生成验证码**!/
         refresh: function () {
             this.options.code = '';
             var canvas = document.getElementById(this.options.canvasId);
@@ -171,22 +171,22 @@ var GVerify = function (id) {
                 // ctx.font = '36px SimHei';
                 ctx.font = randomNum(this.options.height / 2, this.options.height) + 'px SimHei'; //随机生成字体大小
                 ctx.fillStyle = randomColor(50, 160); //随机生成字体颜色
-                /* ctx.shadowOffsetX = randomNum(-3, 3);
-                ctx.shadowOffsetY = randomNum(-3, 3);*/
+                /!* ctx.shadowOffsetX = randomNum(-3, 3);
+                ctx.shadowOffsetY = randomNum(-3, 3);*!/
                 ctx.shadowBlur = randomNum(-3, 3);
                 ctx.shadowColor = "rgba(0, 0, 0, 0.3)";
                 var x = this.options.width / 5 * i;
                 var y = this.options.height / 2;
                 var deg = randomNum(-30, 30);
-                /**设置旋转角度和坐标原点**/
+                /!**设置旋转角度和坐标原点**!/
                 ctx.translate(x, y);
                 ctx.rotate(deg * Math.PI / 180);
                 ctx.fillText(txt, 0, 0);
-                /**恢复旋转角度和坐标原点**/
+                /!**恢复旋转角度和坐标原点**!/
                 ctx.rotate(-deg * Math.PI / 180);
                 ctx.translate(-x, -y);
             }
-            /**绘制干扰线**/
+            /!**绘制干扰线**!/
             for (var i = 0; i < 4; i++) {
                 ctx.strokeStyle = randomColor(40, 180);
                 ctx.beginPath();
@@ -194,7 +194,7 @@ var GVerify = function (id) {
                 ctx.lineTo(randomNum(0, this.options.width / 2), randomNum(0, this.options.height));
                 ctx.stroke();
             }
-            /**绘制干扰点**/
+            /!**绘制干扰点**!/
             for (var i = 0; i < this.options.width / 4; i++) {
                 ctx.fillStyle = randomColor(0, 255);
                 ctx.beginPath();
@@ -203,7 +203,7 @@ var GVerify = function (id) {
             }
         },
 
-        /**验证验证码**/
+        /!**验证验证码**!/
         validate: function (code) {
             var verifyCode = code.toLowerCase();
             var v_code = this.options.code.toLowerCase();
@@ -215,18 +215,18 @@ var GVerify = function (id) {
         }
     }
 
-    /**生成字母数组**/
+    /!**生成字母数组**!/
     function getAllLetter() {
         var letterStr = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z";
         return letterStr.split(",");
     }
 
-    /**生成一个随机数**/
+    /!**生成一个随机数**!/
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min) + min);
     }
 
-    /**生成一个随机色**/
+    /!**生成一个随机色**!/
     function randomColor(min, max) {
         var r = randomNum(min, max);
         var g = randomNum(min, max);
@@ -236,11 +236,19 @@ var GVerify = function (id) {
 
     return new GVerify(id);
 }
-var verifyCode = new GVerify(imgCode);
-
+var verifyCode = new GVerify(imgCode);*/
+var code1;
+onload = function () {
+    var container1 = document.getElementById("imgCode");
+    code1 = new vCode(container1);
+    document.getElementById("btn1").onclick = function () {
+        alert(code1.verify(document.getElementById("code1").value));
+    }
+};
 $("#input").on("blur", function () {
     var inputCode = $("#input").val();
-    if (verifyCode.validate($("#input").val())) {
+    if (code1.verify($("#input").val())) {
+    // if (verifyCode.validate($("#input").val())) {
         console.log("验证码输入正确")
         codeFlag = true
     } else {

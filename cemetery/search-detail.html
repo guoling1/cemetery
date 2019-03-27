@@ -5,19 +5,13 @@
     <title>晋冀鲁豫烈士陵园</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
     <link rel="stylesheet" href="css/informationDetail.css">
 </head>
 <body>
 <div class="headerPage"></div>
-<div class="banner-box">
-    <div class="banner-swiper swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/banner.png" alt=""></div>
-        </div>
-    </div>
-</div>
 <div class="main clear">
-    <div class="box-rt fr" style="width: 100%">
+    <div class="box-rt fr" style="width: 94%">
         <!--<div class="bread"><a href="index.html">首页</a> &gt; <a href="information.html">最新动态</a> &gt; <a
                 href="javascript:;">新闻详情</a></div>-->
         <div class="tit">
@@ -68,7 +62,9 @@
 </div>
 
 <div class="footerPage"></div>
-<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/json2.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
 <script src="js/public.js"></script>
 <script>
 
@@ -81,6 +77,7 @@
             oper: 'getContent',
             id: $.Request('id')
         },
+        crossDomain:true== !(document.all),
         success: function (data) {
             $('.tit h1').html(data.data.Title)
             $('.tit p').html('[来源： '+data.data.Source+' | 作者： '+data.data.Author+' | 日期：'+data.data.CreateDate+' | 浏览'+data.data.Click+' 次]')
