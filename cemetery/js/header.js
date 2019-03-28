@@ -41,8 +41,6 @@ $.ajax({
     dataType : "json",
     crossDomain:true== !(document.all),
     success: function (data) {
-        console.log(data)
-        console.log(data.data)
         var aList = []
         $(data.data).each(function (ind,item) {
             if(item.ParentId=='00000000-0000-0000-0000-000000000000'){
@@ -125,13 +123,10 @@ $.ajax({
                 $('.content-list').eq(0).append(oContent)
             }
         }
-    },
-    error:function (err) {
-        console.log(err)
     }
 })
 if(!/flower/.test(window.location.pathname)) {
-    // jQuery.support.cors = true;
+    jQuery.support.cors = true;
     $.ajax({
         type: 'POST',
         url: GLOBEL_URl,
@@ -188,9 +183,6 @@ if(!/flower/.test(window.location.pathname)) {
                 var h=$('.img1').eq(0).height();
                 $(".banner-box .swiper-wrapper,.banner-box .swiper-slide").css("height",h)
             })
-        },
-        error:function (err) {
-            console.log(err)
         }
     })
 }

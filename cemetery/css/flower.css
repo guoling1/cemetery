@@ -24,7 +24,7 @@
     width: 17%;
     height: 70px;
     background: url(../images/bottom_center.png) no-repeat center;
-    background-size: 100% auto;
+    background-size: 100% 100%;
 }
 .bottom .center span{
     display: inline-block;
@@ -56,14 +56,16 @@
 .img-group{
     margin: 0 auto;
     /*left: 31.25%;*/
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
     /*width: 40%;*/
     width: 730px;
     background: rgba(0,0,0,0.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#5F000000,endcolorstr=#5F000000);
     border-radius: 10px;
 }
 .img-group .item{
+    float: left;
     width: 115px;
     height: 115px;
     /*background: #fff;*/

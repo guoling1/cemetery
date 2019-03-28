@@ -232,7 +232,7 @@ $("#input").on("blur", function () {
     var inputCode = $("#input").val();
     // if (verifyCode.validate($("#input").val())) {
     if (code1.verify($("#input").val())) {
-        console.log("验证码输入正确")
+        // console.log("验证码输入正确")
         flag = true
     } else {
         flag = false

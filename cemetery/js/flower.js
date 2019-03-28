@@ -14,37 +14,56 @@ function getSacrifice(){
         }
     })
 }
-var center_left= document.getElementsByClassName('center_left')[0];
-var center_right= document.getElementsByClassName('center_right')[0];
-var flower_group= document.getElementsByClassName('flower_group')[0];
+var center_left= document.getElementById('center_left');
+var center_right= document.getElementById('center_right');
+var flower_group= document.getElementById('flower_group');
 
 center_left.onclick=function(){
     flower_group.style.display="block"
 }
 center_right.onclick=function(){
-    flower_group.style.display="none"
-    document.getElementsByClassName('people')[0].src = 'images/bend1.gif'
+    flower_group.style.display="none";
+    document.getElementById('people').style.display="block"
+    document.getElementById('people').src = 'images/bend1.gif'
     addSacrificeClick()
     setTimeout(function () {
-        document.getElementsByClassName('people')[0].src = 'images/bend2.png'
+        document.getElementById('people').src = 'images/bend2.png'
     },1000)
 }
-document.getElementsByClassName('main')[0].style.height=(document.body.clientHeight-202)+'px';
-var aItem = document.getElementsByClassName('item');
+document.getElementById('main').style.height=(document.body.clientHeight-202)+'px';
+function getElementsByClassName(node, className) {
+    if (node.getElementsByClassName) {
+        // 使用现有方法
+        return node.getElementsByClassName(className);
+    } else {
+        // 循环遍历所有标签，返回带有相应类名的元素
+        var results = [],
+            elems = node.getElementsByTagName("*");
+        for (var i = 0, len = elems.length; i < len; i++) {
+            if (elems[i].className.indexOf(className) != -1) {
+                results[results.length] = elems[i];
+            }
+        }
+        return results;
+    }
+}
+var aItem = getElementsByClassName(document,'item');
 for (var i=0;i<aItem.length;i++){
     aItem[i].onclick = function () {
         addSacrificeClick();
-        document.getElementsByClassName('img')[0].src = this.childNodes[1].src;
-        document.getElementsByClassName('img')[1].src = this.childNodes[1].src;
+        getElementsByClassName(document,'img')[0].style.display="block"
+        getElementsByClassName(document,'img')[1].style.display="block"
+        getElementsByClassName(document,'img')[0].src = this.childNodes[0].src;
+        getElementsByClassName(document,'img')[1].src = this.childNodes[0].src;
         flower_group.style.display="none"
     }
 }
 $(window).resize(function () {          //当浏览器大小变化时
-    document.getElementsByClassName('main')[0].style.height=(document.body.clientHeight-202)+'px'
-    console.log($(window).height());          //浏览器时下窗口可视区域高度
-    console.log($(document).height());        //浏览器时下窗口文档的高度
-    console.log($(document.body).height());   //浏览器时下窗口文档body的高度
-    console.log($(document.body).outerHeight(true)); //浏览器时下窗口文档body的总高度 包括border padding margin
+    document.getElementById('main').style.height=(document.body.clientHeight-202)+'px'
+    // console.log($(window).height());          //浏览器时下窗口可视区域高度
+    // console.log($(document).height());        //浏览器时下窗口文档的高度
+    // console.log($(document.body).height());   //浏览器时下窗口文档body的高度
+    // console.log($(document.body).outerHeight(true)); //浏览器时下窗口文档body的总高度 包括border padding margin
 });
 function addSacrificeClick() {
     $.ajax({

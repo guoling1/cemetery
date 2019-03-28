@@ -188,7 +188,7 @@ $("#input").on("blur", function () {
 
     // if (verifyCode.validate($("#input").val())) {
     if (code1.verify($("#input").val())) {
-        console.log("验证码输入正确")
+        // console.log("验证码输入正确")
         codeFlag = true
     } else {
         codeFlag = false
