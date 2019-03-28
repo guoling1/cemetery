@@ -60,7 +60,7 @@ $('.submit').click(function () {
                 data: {
                     oper: 'addMessage',
                     content: $("#content").val(),
-                    name: $("#name").val(),
+                    name: $("#name").val()
                 },
                 crossDomain:true== !(document.all),
                 dataType: "json",
@@ -224,9 +224,9 @@ var code1;
 onload = function () {
     var container1 = document.getElementById("imgCode");
     code1 = new vCode(container1);
-    document.getElementById("btn1").onclick = function () {
-        alert(code1.verify(document.getElementById("code1").value));
-    }
+    // document.getElementById("btn1").onclick = function () {
+    //     alert(code1.verify(document.getElementById("code1").value));
+    // }
 };
 $("#input").on("blur", function () {
     var inputCode = $("#input").val();

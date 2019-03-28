@@ -41,6 +41,8 @@ $.ajax({
     dataType : "json",
     crossDomain:true== !(document.all),
     success: function (data) {
+        console.log(data)
+        console.log(data.data)
         var aList = []
         $(data.data).each(function (ind,item) {
             if(item.ParentId=='00000000-0000-0000-0000-000000000000'){
@@ -123,21 +125,31 @@ $.ajax({
                 $('.content-list').eq(0).append(oContent)
             }
         }
+    },
+    error:function (err) {
+        console.log(err)
     }
 })
 if(!/flower/.test(window.location.pathname)) {
+    // jQuery.support.cors = true;
     $.ajax({
         type: 'POST',
         url: GLOBEL_URl,
         data: {
             oper: 'getBannerList'
         },
-        crossDomain:true== !(document.all),
+        // async: true,
+        // crossDomain:true== !(document.all),
+        // xhrFields: {
+        //     withCredentials: true
+        // },
+        // contentType:"text/plain",
         dataType: "json",
+        // cache: false,
         success: function (data) {
             var slider = ''
             for (var i = 0; i < data.data.length; i++) {
-                slider += '<div class="swiper-slide"><img class="img1" src="' + GLOBEL_IP + data.data[i].ImgUrl + '" alt=""></div>'
+                slider += '<div class="swiper-slide"><a target="_blank" href="'+data.data[i].LinkUrl+'"><img class="img1" src="' + GLOBEL_IP + data.data[i].ImgUrl + '" alt=""></a></div>'
             }
             $('#swiper').html(slider);
             // var mySwiper = new Swiper('.banner-swiper', {
@@ -176,6 +188,9 @@ if(!/flower/.test(window.location.pathname)) {
                 var h=$('.img1').eq(0).height();
                 $(".banner-box .swiper-wrapper,.banner-box .swiper-slide").css("height",h)
             })
+        },
+        error:function (err) {
+            console.log(err)
         }
     })
 }

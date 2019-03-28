@@ -105,7 +105,7 @@ $.ajax({
             var swiper = document.getElementById('swiper');
             var slider=''
             for (var i=0;i<data.data.length;i++){
-                slider += '<div class="swiper-slide"><img src="'+GLOBEL_IP+data.data[i].ImgUrl+'" alt=""></div>'
+                slider += '<div class="swiper-slide"><a target="_blank" href="\'+data.data[i].LinkUrl+\'"><img src="'+GLOBEL_IP+data.data[i].ImgUrl+'" alt=""></a></div>'
             }
             $('#swiper').html(slider)
             var mySwiper = new Swiper('.banner-swiper', {

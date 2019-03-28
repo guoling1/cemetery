@@ -90,6 +90,7 @@ $.ajax({
 });
 
 //获取咨询
+// jQuery.support.cors = true;
 $.ajax({
     type: "POST",
     dataType: "json",

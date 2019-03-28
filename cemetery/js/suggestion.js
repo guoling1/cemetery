@@ -30,9 +30,9 @@ var code1;
 onload = function () {
     var container1 = document.getElementById("imgCode");
     code1 = new vCode(container1);
-    document.getElementById("btn1").onclick = function () {
-        alert(code1.verify(document.getElementById("code1").value));
-    }
+    // document.getElementById("btn1").onclick = function () {
+    //     alert(code1.verify(document.getElementById("code1").value));
+    // }
 };
 // var GVerify = function (id) {
 //     function GVerify(options) { //创建一个图形验证码对象，接收options对象为参数
