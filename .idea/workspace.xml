@@ -6,16 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cd0942ae-e86b-4e4c-b97c-edb15e4b0bbd" name="Default" comment="ie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cemetery/css/flower.css" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/css/flower.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cemetery/flower.html" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/flower.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cemetery/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cemetery/js/flower.js" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/js/flower.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cemetery/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/js/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cemetery/js/memorial.js" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/js/memorial.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cemetery/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/js/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cemetery/js/reservation-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/js/reservation-info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cemetery/js/suggestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/cemetery/js/suggestion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/m/js/public.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,21 +23,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/m/js/public.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
+                <state relative-caret-position="264">
                   <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#28#32#1" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/m/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+                <state relative-caret-position="594">
+                  <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
                   <folding>
                     <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
@@ -61,14 +50,23 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/m/js/header.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="322">
+                  <caret line="107" column="108" selection-start-line="107" selection-start-column="108" selection-end-line="107" selection-end-column="108" />
+                  <folding>
+                    <element signature="e#646#3849#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cemetery/js/public.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="242">
-                  <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#28#32#1" expanded="true" />
-                  </folding>
+                  <caret line="14" column="35" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -76,7 +74,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cemetery/js/flower.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
+                <state relative-caret-position="1210">
                   <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
                   <folding>
                     <element signature="n#!!block;n#AddFavorite#0" />
@@ -101,7 +99,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cemetery/flower.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="313">
+                <state relative-caret-position="-21">
                   <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -115,7 +113,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cemetery/css/mpDetail.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
+                <state relative-caret-position="1364">
                   <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
                 </state>
               </provider>
@@ -125,7 +123,7 @@
             <entry file="file://$PROJECT_DIR$/cemetery/css/index.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="814">
-                  <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+                  <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -234,7 +232,6 @@
         <option value="$PROJECT_DIR$/cemetery/search.html" />
         <option value="$PROJECT_DIR$/cemetery/search-detail.html" />
         <option value="$PROJECT_DIR$/cemetery/css/public.css" />
-        <option value="$PROJECT_DIR$/m/js/header.js" />
         <option value="$PROJECT_DIR$/cemetery/js/1.js" />
         <option value="$PROJECT_DIR$/cemetery/js/index.js" />
         <option value="$PROJECT_DIR$/cemetery/index.html" />
@@ -251,6 +248,7 @@
         <option value="$PROJECT_DIR$/cemetery/js/flower.js" />
         <option value="$PROJECT_DIR$/m/js/public.js" />
         <option value="$PROJECT_DIR$/cemetery/css/flower.css" />
+        <option value="$PROJECT_DIR$/m/js/header.js" />
       </list>
     </option>
   </component>
@@ -266,7 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,6 +291,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,6 +390,7 @@
       <workItem from="1553307995788" duration="10000" />
       <workItem from="1553308859012" duration="1716000" />
       <workItem from="1553561939340" duration="24750000" />
+      <workItem from="1553839449486" duration="107000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1543051606299</created>
@@ -582,14 +581,22 @@
       <option name="project" value="LOCAL" />
       <updated>1553757752566</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ie">
+      <created>1553765834066</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1553765834066</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="300258000" />
+    <option name="totallyTimeSpent" value="300405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1932" height="1045" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11721225" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -604,7 +611,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.14940022" />
-      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.17136659" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.17124039" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -843,16 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/m/js/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="101" column="22" lean-forward="true" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
-          <folding>
-            <element signature="e#646#3849#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cemetery/js/1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -974,38 +971,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cemetery/css/mpDetail.css">
+    <entry file="file://$PROJECT_DIR$/m/js/public.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cemetery/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cemetery/flower.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+        <state relative-caret-position="264">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cemetery/js/flower.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
-          <folding>
-            <element signature="n#!!block;n#AddFavorite#0" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1013,9 +984,16 @@
     <entry file="file://$PROJECT_DIR$/cemetery/js/public.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="35" />
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cemetery/js/flower.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1210">
+          <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
           <folding>
-            <element signature="e#28#32#1" expanded="true" />
+            <element signature="n#!!block;n#AddFavorite#0" />
           </folding>
         </state>
       </provider>
@@ -1027,21 +1005,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/m/js/public.js">
+    <entry file="file://$PROJECT_DIR$/cemetery/flower.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="-21">
+          <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#28#32#1" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cemetery/css/mpDetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cemetery/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/m/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="594">
+          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
@@ -1050,6 +1043,16 @@
             <element signature="n#ul#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/m/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="107" column="108" selection-start-line="107" selection-start-column="108" selection-end-line="107" selection-end-column="108" />
+          <folding>
+            <element signature="e#646#3849#0" />
           </folding>
         </state>
       </provider>
