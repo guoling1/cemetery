@@ -6,6 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/digitization.css">
 </head>
@@ -120,7 +121,7 @@
         },
         success: function (data) {
             $('.title').html(data.data.Title)
-            // $('.audio').html('[来源：'+data.data.Source+' | 作者：'+data.data.Author+' | 日期：'+data.data.CreateDate+' | 浏览'+data.data.Click+' 次]')
+            $('.audio').html('[来源：'+data.data.Source+' | 作者：'+data.data.Author+' | 日期：'+data.data.CreateDate+' | 浏览'+data.data.Click+' 次]')
             data.data.ContentHtml = data.data.ContentHtml.replace(/src="\/res/g,'src="'+GLOBEL_IP+'/res')
             $('.detail').html(data.data.ContentHtml)
             addContentClick($.Request('id'))
