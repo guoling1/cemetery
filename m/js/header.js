@@ -36,17 +36,25 @@ $.ajax({
         $(data.data).each(function (ind,item) {
             if(item.ParentId=='00000000-0000-0000-0000-000000000000'){
                 item.childList = []
-                aList[item.Sort-1]=item
+                // aList[item.Sort-1]=item
+                aList.push(item)
             }
+        })
+        aList.sort(function (a,b) {
+            return a.Sort-b.Sort
         })
         for(var i=0;i<aList.length;i++){
             for (var j=0;j<data.data.length;j++){
                 if(data.data[j].ParentId!='00000000-0000-0000-0000-000000000000'){
                     if(aList[i].ContentTypeId==data.data[j].ParentId){
-                        aList[i].childList[data.data[j].Sort-1]=data.data[j]
+                        // aList[i].childList[data.data[j].Sort-1]=data.data[j]
+                        aList[i].childList.push(data.data[j])
                     }
                 }
             }
+            aList[i].childList.sort(function (a,b) {
+                return a.Sort-b.Sort
+            })
         }
         localStorage.setItem('navList',JSON.stringify(aList))
 
